@@ -1,0 +1,80 @@
+/* colors used in the css
+#F0F8FF; #1E90FF; #ADD8E6;
+*/
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F0F8FF;
+    color: #1E90FF;
+}
+
+.header{
+    padding: 0 5% ;
+    background-image: url(../image/bf_for_portfolio.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-color: #ADD8E6; */
+}
+
+/* header > navSection */
+.navSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* header > navSection > navbarBrand */
+.navbarBrand{
+    font-family: 'Audiowide', cursive;
+    font-size: 225%;
+}
+
+/* header > navSection > navbarBrand > logo */
+.logo{
+    text-decoration: none;
+}
+
+/* header > navSection > navMap > navList */
+.navList{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* header > navSection > navMap > navList > navItem */
+.navItems{
+    list-style: none;
+}
+
+/* header > navSection > navMap > navList > navItems > navLinks */
+.navLinks{
+    text-decoration: none;
+}
+
+.myPicture{
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+.footer{
+    background-color: #1E90FF;
+    color: #F0F8FF;
+}
+
+/* footer >  */
