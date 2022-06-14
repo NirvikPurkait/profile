@@ -75,6 +75,57 @@ body{
 .footer{
     background-color: #1E90FF;
     color: #F0F8FF;
+    padding: 5% 5% 10%;
 }
 
-/* footer >  */
+/* footer > reviewSection */
+.reviewSection{
+    background-color: #1E90FF;
+    color: #F0F8FF;
+    font-family: 'Bree Serif', serif;
+}
+
+/* footer > reviewSection > form > forNameSection */
+/* footer > reviewSection > form > forEmailSection */
+/* footer > reviewSection > form > forMessageSection */
+.forNameSection,
+.forEmailSection{
+    align-items: center;
+}
+
+
+.forNameSection input,
+.forEmailSection input,
+.forMessageSection textarea{
+    border-radius: 16px;
+    border: 2px solid #84888c;
+    margin: 4px 0 10px;
+    padding: 8px 12px;
+    outline: none;
+}
+
+.forNameSection input::placeholder,
+.forEmailSection input::placeholder,
+.forMessageSection textarea::placeholder{
+    color: #545759;
+
+}
+
+.forNameSection input:focus,
+.forEmailSection input:focus,
+.forMessageSection textarea:focus{
+    border: 2px solid #545759;
+    outline: none;
+}
+
+/* footer > reviewSection > form > submit */
+.submitButton{
+    background-color: aqua;
+    margin-left: auto;
+    margin-top: 12px;
+    display: block;
+    border: none;
+    padding: 8px 40px;
+    border-radius: 60px;
+    font-size: 24px;
+}
