@@ -63,6 +63,26 @@ body{
     padding: 0 10px;
 }
 
+.about::before, .work::before, .galary::before {
+    content: '';
+    position: absolute;
+    background-color: #f0f8ff;
+    height: 3px;
+    left: 0;
+    right: 0;
+    top: 100%;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transition: transform 0.3s linear;
+}
+
+.about:hover::before, .work:hover::before, .galary:hover::before,
+.about:active::before, .work:active::before, .galary:active::before,
+.about:focus::before, .work:focus::before, .galary:focus::before {
+    transform: scaleX(1);
+}
+
+
 .myPicture{
     width: 50%;
     height: auto;
@@ -158,11 +178,16 @@ body{
 
 /* footer > resumeSection > resumeButton */
 .resumeButton button{
+    position: relative;
     border: none;
     border-radius: 50px;
     padding: 8px 18px;
     font-family: 'Rajdhani', sans-serif;
     font-weight: 900;
+    z-index: 1;
+    color: #F0F8FF;
+    background-color: #4169E1;
+    transition: all 0.3s linear;
 }
 
 /* footer > resumeSection > connectionSection */
@@ -241,24 +266,28 @@ body{
 
 
 
-
-
-
-.about::before, .work::before, .galary::before {
-    content: '';
-    position: absolute;
-    background-color: #f0f8ff;
-    height: 3px;
-    left: 0;
-    right: 0;
-    top: 100%;
-    border-radius: 10px;
-    transform: scaleX(0);
-    transition: transform 0.3s linear;
+.resumeButton{
+    position: relative;
 }
 
-.about:hover::before, .work:hover::before, .galary:hover::before,
-.about:active::before, .work:active::before, .galary:active::before,
-.about:focus::before, .work:focus::before, .galary:focus::before {
+.resumeButton button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #F0F8FF;
+    border-radius: 50px;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s linear;
+}
+.resumeButton button:hover::before{
     transform: scaleX(1);
+    transform-origin: left;
+}
+.resumeButton button:hover{
+    color: black;
 }
