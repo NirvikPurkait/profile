@@ -46,16 +46,21 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 /* header > navSection > navMap > navList > navItem */
 .navItems{
     list-style: none;
+    font-size: 20px;
+    position: relative;
 }
 
 /* header > navSection > navMap > navList > navItems > navLinks */
 .navLinks{
     text-decoration: none;
+    color: #F0F8FF;
+    padding: 0 10px;
 }
 
 .myPicture{
@@ -221,15 +226,13 @@ body{
     color: #333333;
 }
 
-
-/* _________________________________________________________________________________________________ */
-/* ekhane experiment er jonne korchi */
-
 /* footer > copyright */
 .copyright{
     text-align: center;
 }
 
+/* _________________________________________________________________________________________________ */
+/* ekhane experiment er jonne korchi */
 
 
 
@@ -239,3 +242,23 @@ body{
 
 
 
+
+
+.about::before, .work::before, .galary::before {
+    content: '';
+    position: absolute;
+    background-color: #f0f8ff;
+    height: 3px;
+    left: 0;
+    right: 0;
+    top: 100%;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transition: transform 0.3s linear;
+}
+
+.about:hover::before, .work:hover::before, .galary:hover::before,
+.about:active::before, .work:active::before, .galary:active::before,
+.about:focus::before, .work:focus::before, .galary:focus::before {
+    transform: scaleX(1);
+}
