@@ -2,7 +2,7 @@
 768px, 992px, 1200px */
 
 /* colors used in the css
-#F0F8FF; #1E90FF; #ADD8E6; #84888c; #545759; #00ffff; #8a2be2; #ffffff; #ff0000; 
+#F0F8FF; #1E90FF; #ADD8E6; #84888c; #545759; #00ffff; #8a2be2; #ffffff; #ff0000; #004cff; #4267B2; #fed373; #f15245; #d92e7f; #9b36b7; #515ecf; #1DA1F2; #25D366; #0077b5; #333333
 */
 
 /* When a new class or id added, add the path in comment */
@@ -58,6 +58,7 @@
         height: 60px;
         border-radius: 50%;
         z-index: 9;
+        overflow: hidden;
     }
 
     /* header > navSection > hamburger > lines */
@@ -120,17 +121,22 @@
     
     .work{
         position: relative;
-        right: 100%;
+        right: 70%;
     }
     .galary{
         position: relative;
-        right: 150%;
+        right: 120%;
     }
     .contact{
-        background-color: #8a2be2;
+        background-color: #1E90FF;
         padding: 6px 18px;
         border-radius: 20px;
         color: #ffffff;
+        transition: all 0.2s linear;
+    }
+    .contact:hover{
+        background-color: #ffffff;
+        color: #1E90FF;
     }
 
     /* header > navSection > hamburger */
@@ -156,11 +162,11 @@
     /* header > navSection > navMap > navList > navItems > navLinks */
     .work{
         position: relative;
-        right: 200%;
+        right: 110%;
     }
     .galary{
         position: relative;
-        right: 310%;
+        right: 190%;
     }
 }
 
