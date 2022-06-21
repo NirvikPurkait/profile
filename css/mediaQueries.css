@@ -45,7 +45,12 @@
     .navItems{
         font-size: 200%;
     }
-
+    
+    /* header > navSection > navMap > navList > navItems > navLinks > dropdownButton */
+    .dropdownButton{
+        display: none;
+    }
+    
 
     /* header > navSection > hamburger */
     .hamburger{
@@ -121,20 +126,20 @@
     
     .work{
         position: relative;
-        right: 70%;
+        right: 38%;
     }
     .galary{
         position: relative;
-        right: 120%;
+        right: 70%;
     }
-    .contact{
+    .contact button{
         background-color: #1E90FF;
         padding: 6px 18px;
         border-radius: 20px;
         color: #ffffff;
         transition: all 0.2s linear;
     }
-    .contact:hover{
+    .contact button:hover{
         background-color: #ffffff;
         color: #1E90FF;
     }
@@ -162,11 +167,11 @@
     /* header > navSection > navMap > navList > navItems > navLinks */
     .work{
         position: relative;
-        right: 110%;
+        right: 86%;
     }
     .galary{
         position: relative;
-        right: 190%;
+        right: 154%;
     }
 }
 

@@ -1,5 +1,5 @@
 function changingNavSection() {
-    
+
     let toChange = document.getElementsByClassName('navListSm');
 
     let toCross = document.getElementsByClassName('hamburger');
