@@ -1,5 +1,5 @@
 /* colors used in the css
-#F0F8FF; #1E90FF; #ADD8E6; #84888c; #545759; #00ffff; #8a2be2; #ffffff; #ff0000; #004cff; #4267B2; #fed373; #f15245; #d92e7f; #9b36b7; #515ecf; #1DA1F2; #25D366; #0077b5; #333333
+#F0F8FF; #1E90FF; #ADD8E6; #84888c; #545759; #00ffff; #8a2be2; #ffffff; #ff0000; #004cff; #4267B2; #fed373; #f15245; #d92e7f; #9b36b7; #515ecf; #1DA1F2; #25D366; #0077b5; #333333; #6f6f6f; 
 */
 
 /* When a new class or id added, add the path in comment */
@@ -9,8 +9,9 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #F0F8FF;
+    background-color: #232323;
     color: #1E90FF;
+    overflow-x: hidden;
 }
 
 .header{
@@ -63,6 +64,15 @@ body{
     padding: 0 10px;
 }
 
+.dropdownButton{
+    font-size: 14px;
+    transition: all 0.3s linear;
+}
+
+.navLinks:hover .dropdownButton{
+    transform: rotate(180deg);
+}
+
 .about::before, .work::before, .galary::before {
     content: '';
     position: absolute;
@@ -98,14 +108,14 @@ body{
 
 
 .footer{
-    background-color: #1E90FF;
+    /* background-color: #1E90FF; */
     color: #F0F8FF;
     padding: 5% 5% 5%;
 }
 
 /* footer > reviewSection */
 .reviewSection{
-    background-color: #1E90FF;
+    /* background-color: #1E90FF; */
     color: #F0F8FF;
     font-family: 'Bree Serif', serif;
     margin: 40px auto;
@@ -177,6 +187,12 @@ body{
 }
 
 /* footer > resumeSection > resumeButton */
+.resumeButton{
+    position: relative;
+    border-radius: 50%;
+    box-shadow: 21px 10px 15px #000;
+}
+
 .resumeButton button{
     position: relative;
     border: none;
@@ -190,29 +206,54 @@ body{
     transition: all 0.3s linear;
 }
 
+.resumeButton button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #F0F8FF;
+    border-radius: 50px;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s linear;
+}
+
+.resumeButton button:hover{
+    color: black;
+}
+
+.resumeButton button:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
 /* footer > resumeSection > connectionSection */
 .connectionSection{
     margin: 50px 0 0;
     width: 100%;
 }
 
-/* footer > resumeSection > connectionSection > row > col */
 .facebook, .twitter, .instagram, .linkedin, .whatsapp, .github{
     justify-content: space-around;
     display: flex;
+    margin: 12px 0 12px;
 }
 
 /* footer > resumeSection > connectionSection > row > col > social */
 .social{
     width: 60px;
     height: 60px;
-    background-color: blue;
+    background-color: #6f6f6f;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 50%;
     transition: all 0.3s linear;
+    box-shadow: 9px 4px 21px #000000;
 }
 
 .social:hover{
@@ -236,7 +277,8 @@ body{
     color: #1DA1F2;
 }
 .instagram .social:hover > i{
-    background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+    background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%,
+    #9b36b7 85%, #515ecf);
     background-clip:text;
     -webkit-background-clip: text;
     color: transparent;
@@ -261,33 +303,12 @@ body{
 
 
 
-
-
-
-
-
-.resumeButton{
-    position: relative;
-}
-
-.resumeButton button::before{
-    content: '';
+.dropdownList{
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: #F0F8FF;
-    border-radius: 50px;
-    z-index: -1;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.3s linear;
 }
-.resumeButton button:hover::before{
-    transform: scaleX(1);
-    transform-origin: left;
-}
-.resumeButton button:hover{
-    color: black;
-}
+
+
+
+
+
+
