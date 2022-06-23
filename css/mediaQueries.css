@@ -165,6 +165,9 @@
 
 @media screen and (min-width: 992px) {
     /* header > navSection > navMap > navList > navItems > navLinks */
+    .about{
+        position: relative;
+    }
     .work{
         position: relative;
         right: 86%;
@@ -190,3 +193,6 @@
 
 
 
+@media screen and (min-width: 992px){
+    
+}

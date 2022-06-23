@@ -73,7 +73,7 @@ body{
     transform: rotate(180deg);
 }
 
-.about::before, .work::before, .galary::before {
+.about::before, .work::before, .galary::before{
     content: '';
     position: absolute;
     background-color: #f0f8ff;
@@ -88,7 +88,7 @@ body{
 
 .about:hover::before, .work:hover::before, .galary:hover::before,
 .about:active::before, .work:active::before, .galary:active::before,
-.about:focus::before, .work:focus::before, .galary:focus::before {
+.about:focus::before, .work:focus::before, .galary:focus::before{
     transform: scaleX(1);
 }
 
@@ -305,10 +305,23 @@ body{
 
 .dropdownList{
     position: absolute;
+    display: none;
 }
 
+.dropdownList ul {
+    margin: 0;
+    padding: 0 0 0 20px;
+    list-style: none;
+    line-height: 2;
+}
 
+.dropdownList li{
+    width: max-content;
+}
 
+.dropdownList a{
+    text-decoration: none;
+}
 
 
 
