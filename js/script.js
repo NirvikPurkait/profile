@@ -34,13 +34,24 @@ var dropdownList3 = dropdownList[2];
 
 function displayingAboutDropdown() {
 
-    if (dropdownList1.style.display == 'block') {
-        dropdownList1.style.display = 'none';
-    }
-    else {
-        dropdownList1.style.display = 'block'
-    }
+    dropdownList1.classList.toggle('hide')
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function displayingWorkDropdown() {
 
     if (dropdownList2.style.display == 'block') {
