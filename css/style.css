@@ -15,11 +15,11 @@ body{
 }
 
 .header{
-    padding: 0 5% ;
+    padding: 0 5% 20%;
     background-image: url(../image/bf_for_portfolio.png);
+    /* mask-image: linear-gradient(to top, transparent 9%, #232323 20%); */
     background-repeat: no-repeat;
     background-position: center;
-    /* background-color: #ADD8E6; */
 }
 
 /* header > navSection */
@@ -64,16 +64,7 @@ body{
     padding: 0 10px;
 }
 
-.dropdownButton{
-    font-size: 14px;
-    transition: all 0.3s linear;
-}
-
-.navLinks:hover .dropdownButton{
-    transform: rotate(180deg);
-}
-
-.about::before, .work::before, .galary::before {
+.about::before, .work::before, .galary::before{
     content: '';
     position: absolute;
     background-color: #f0f8ff;
@@ -88,16 +79,15 @@ body{
 
 .about:hover::before, .work:hover::before, .galary:hover::before,
 .about:active::before, .work:active::before, .galary:active::before,
-.about:focus::before, .work:focus::before, .galary:focus::before {
+.about:focus::before, .work:focus::before, .galary:focus::before{
     transform: scaleX(1);
 }
 
 
-.myPicture{
-    width: 50%;
-    height: auto;
-    border-radius: 50%;
-}
+
+
+
+
 
 
 
@@ -108,7 +98,6 @@ body{
 
 
 .footer{
-    /* background-color: #1E90FF; */
     color: #F0F8FF;
     padding: 5% 5% 5%;
 }
@@ -303,8 +292,20 @@ body{
 
 
 
-.dropdownList{
+
+.dropdown{
     position: absolute;
+    display: none;
+    width: max-content;
+}
+
+.dropdownList{
+    margin: 0;
+    padding: 0 0 0 20px;
+}
+
+.dropdownItem{
+    list-style: none;
 }
 
 
@@ -312,3 +313,19 @@ body{
 
 
 
+
+
+
+
+.experiment{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experimentImg{
+    width: 40vw;
+    transform: skew(20deg,-11deg) rotate(3deg);
+    box-shadow: 30px 30px 25px black;
+}
