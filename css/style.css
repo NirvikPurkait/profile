@@ -17,7 +17,7 @@ body{
 .header{
     padding: 0 5% 20%;
     background-image: url(../image/bf_for_portfolio.png);
-    mask-image: linear-gradient(to top, transparent 9%, #232323 20%);
+    /* mask-image: linear-gradient(to top, transparent 9%, #232323 20%); */
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -61,16 +61,7 @@ body{
 .navLinks{
     text-decoration: none;
     color: #F0F8FF;
-    padding: 0 10px 20px;
-}
-
-.dropdownButton{
-    font-size: 14px;
-    transition: all 0.3s linear;
-}
-
-.navLinks:hover .dropdownButton{
-    transform: rotate(180deg);
+    padding: 0 10px;
 }
 
 .about::before, .work::before, .galary::before{
@@ -93,11 +84,10 @@ body{
 }
 
 
-.myPicture{
-    width: 50%;
-    height: auto;
-    border-radius: 50%;
-}
+
+
+
+
 
 
 
@@ -302,43 +292,21 @@ body{
 
 
 
-.dropdownList{
+
+.dropdown{
     position: absolute;
     display: none;
-}
-
-.about:hover .dropdownList, .work:hover .dropdownList, .galary:hover .dropdownList{
-    display: block;
-}
-
-.hide{
-    display: none;
-}
-
-.dropdownList ul {
-    margin: 0;
-    padding: 0 0 0 20px;
-    list-style: none;
-    line-height: 2;
-}
-
-.dropdownList li{
     width: max-content;
 }
 
-.dropdownList a{
-    text-decoration: none;
+.dropdownList{
+    margin: 0;
+    padding: 0 0 0 20px;
 }
 
-
-
-
-
-
-
-
-
-
+.dropdownItem{
+    list-style: none;
+}
 
 
 
